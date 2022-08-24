@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "@miror/pf",
   "version": "0.0.1",
   "dependencies": {
     "@nrwl/next": "14.5.5",

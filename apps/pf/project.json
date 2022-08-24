@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/blog",
+  "sourceRoot": "apps/pf",
   "projectType": "application",
   "targets": {
     "build": {
@@ -8,13 +8,13 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/blog",
-        "outputPath": "dist/apps/blog",
-        "postcssConfig": "apps/blog/postcss.config.js"
+        "root": "apps/pf",
+        "outputPath": "dist/apps/pf",
+        "postcssConfig": "apps/pf/postcss.config.js"
       },
       "configurations": {
         "development": {
-          "outputPath": "apps/blog"
+          "outputPath": "apps/pf"
         },
         "production": {}
       }
@@ -23,16 +23,16 @@
       "executor": "@nrwl/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "blog:build",
+        "buildTarget": "pf:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "blog:build:development",
+          "buildTarget": "pf:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "blog:build:production",
+          "buildTarget": "pf:build:production",
           "dev": false
         }
       }
@@ -40,14 +40,14 @@
     "export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "blog:build:production"
+        "buildTarget": "pf:build:production"
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/blog"],
+      "outputs": ["coverage/apps/pf"],
       "options": {
-        "jestConfig": "apps/blog/jest.config.ts",
+        "jestConfig": "apps/pf/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -55,7 +55,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/blog/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/pf/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },
