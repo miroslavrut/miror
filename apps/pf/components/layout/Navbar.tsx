@@ -21,7 +21,7 @@ export const Navbar = () => {
             alt="logo"
           /> */}
           <span className="self-center whitespace-nowrap text-xl font-semibold text-white">
-            Miror
+            Miro
           </span>
         </a>
         <div className="flex">
@@ -92,14 +92,15 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="block rounded border-gray-700 py-2 pr-4  pl-3 
+              <Link href="/blog">
+                <a
+                  className="block rounded border-gray-700 py-2 pr-4  pl-3 
                   text-gray-400 hover:bg-gray-700 hover:text-white md:p-0 
                    md:hover:bg-transparent md:hover:text-white"
-              >
-                Services
-              </a>
+                >
+                  Blog
+                </a>
+              </Link>
             </li>
             <li>
               <a
