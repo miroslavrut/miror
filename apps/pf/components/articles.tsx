@@ -6,7 +6,7 @@ export default function Articles({ posts }) {
       {posts.map((post) => (
         <li key={post.slug}>
           <div>
-            <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+            <Link href={`/posts/${post.slug}`} legacyBehavior>{post.title}</Link>
           </div>
           <p>{post.excerpt}</p>
           {/* <p>

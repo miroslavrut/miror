@@ -70,36 +70,36 @@ export const Navbar = () => {
             md:bg-white md:bg-inherit md:text-sm md:font-medium"
           >
             <li>
-              <Link href="/">
-                <a
-                  className="block rounded py-2 pr-4 pl-3 text-white md:bg-transparent
-                  md:p-0"
-                  aria-current="page"
-                >
+              <Link
+                href="/"
+                className="block rounded py-2 pr-4 pl-3 text-white md:bg-transparent
+                md:p-0"
+                aria-current="page">
+                
                   Home
-                </a>
+                
               </Link>
             </li>
             <li>
-              <Link href="/about">
-                <a
-                  className="md::hover:bg-transparent block rounded border-gray-700 py-2  pr-4 
-                  pl-3 text-gray-400 hover:bg-gray-700 hover:text-white 
-                  md:p-0 md:hover:text-white"
-                >
+              <Link
+                href="/about"
+                className="md::hover:bg-transparent block rounded border-gray-700 py-2  pr-4 
+                pl-3 text-gray-400 hover:bg-gray-700 hover:text-white 
+                md:p-0 md:hover:text-white">
+                
                   About
-                </a>
+                
               </Link>
             </li>
             <li>
-              <Link href="/blog">
-                <a
-                  className="block rounded border-gray-700 py-2 pr-4  pl-3 
-                  text-gray-400 hover:bg-gray-700 hover:text-white md:p-0 
-                   md:hover:bg-transparent md:hover:text-white"
-                >
+              <Link
+                href="/blog"
+                className="block rounded border-gray-700 py-2 pr-4  pl-3 
+                text-gray-400 hover:bg-gray-700 hover:text-white md:p-0 
+                 md:hover:bg-transparent md:hover:text-white">
+                
                   Blog
-                </a>
+                
               </Link>
             </li>
             <li>
