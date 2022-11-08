@@ -12,6 +12,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        darkin: '#050710',
+        darkpurple: '#180A29',
         rlydarkfam: '#94CECF',
         bitlessdarkinnit: '#F6F6F7',
       },

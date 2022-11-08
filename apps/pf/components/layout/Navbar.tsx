@@ -10,8 +10,8 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-0 left-0 z-20 w-full border-b border-gray-900 bg-gray-900 px-2 
-      py-2.5 sm:px-4"
+      className="from-darkin to-darkpurple fixed top-0 left-0 z-20 w-full border-b
+      border-gray-900 bg-gradient-to-r px-2 py-2.5 sm:px-4"
     >
       <div className="container mx-auto flex flex-wrap justify-between">
         <a href="/" className="flex items-center">
@@ -20,11 +20,11 @@ export const Navbar = () => {
             className="mr-3 h-6 sm:h-9"
             alt="logo"
           /> */}
-          <span className="self-center whitespace-nowrap text-xl font-semibold text-white">
-            Miro
+          <span className="self-center whitespace-nowrap pl-2 text-xl font-semibold text-white md:pl-0">
+            miror
           </span>
         </a>
-        <div className="flex">
+        <div className="flex sm:pr-2">
           {/* <button
             type="button"
             className="mr-3 rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 md:mr-0"
@@ -74,10 +74,9 @@ export const Navbar = () => {
                 href="/"
                 className="block rounded py-2 pr-4 pl-3 text-white md:bg-transparent
                 md:p-0"
-                aria-current="page">
-                
-                  Home
-                
+                aria-current="page"
+              >
+                home
               </Link>
             </li>
             <li>
@@ -85,10 +84,9 @@ export const Navbar = () => {
                 href="/about"
                 className="md::hover:bg-transparent block rounded border-gray-700 py-2  pr-4 
                 pl-3 text-gray-400 hover:bg-gray-700 hover:text-white 
-                md:p-0 md:hover:text-white">
-                
-                  About
-                
+                md:p-0 md:hover:text-white"
+              >
+                about
               </Link>
             </li>
             <li>
@@ -96,10 +94,9 @@ export const Navbar = () => {
                 href="/blog"
                 className="block rounded border-gray-700 py-2 pr-4  pl-3 
                 text-gray-400 hover:bg-gray-700 hover:text-white md:p-0 
-                 md:hover:bg-transparent md:hover:text-white">
-                
-                  Blog
-                
+                 md:hover:bg-transparent md:hover:text-white"
+              >
+                blog
               </Link>
             </li>
             <li>
@@ -109,7 +106,7 @@ export const Navbar = () => {
                 text-gray-400 hover:bg-gray-700 hover:text-white md:p-0 
                   md:hover:bg-transparent md:hover:text-white"
               >
-                Contact
+                contact
               </a>
             </li>
           </ul>

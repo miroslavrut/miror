@@ -10,9 +10,9 @@ function CustomApp({ Component, pageProps }: AppProps) {
       .querySelector('body')
       .classList.add(
         'min-h-screen',
-        'bg-gradient-to-b',
-        'from-gray-800',
-        'to-gray-700'
+        'bg-gradient-to-r',
+        'from-darkin',
+        'to-darkpurple'
       );
   });
 
